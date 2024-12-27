@@ -1,0 +1,8 @@
+<script>
+    var categories = ["All", "Fashion", "Footwear", "Electronics"];
+    var deleted = categories.shift();
+    console.log(deleted);
+    categories.map(function(category){
+        document.write(`<li>${category}</li>`);
+    })
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/styles/ticket.css">
+    <style type="text/css" media="screen">
+        .ticket {
+            background-color: yellow;
+            color:red;
+            padding: 20px;
+            border:4px solid black;
+            width: 400px;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+    </style>
+
+    <style type="text/css" media="print">
+        img {
+            display: none;
+        }
+        .ticket {
+            border:1px solid gray;
+            width: 400px;
+            padding: 20px;
+        }
+        dt {
+            font-weight: bold;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+         <h1>Your Ticket</h1>
+         <img src="../images/a6.jpg" width="100" height="100">
+         <dl>
+            <dt>Departure Station</dt>
+            <dd>Hyderabad</dd>
+            <dt>Time</dt>
+            <dd>4:50 PM</dd>
+            <dt>Destination</dt>
+            <dd>Delhi</dd>
+            <dt>Time</dt>
+            <dd>08:30 AM</dd>
+         </dl>
+         <button onclick="window.print()">Print</button>
+    </div>
+</body>
+</html>

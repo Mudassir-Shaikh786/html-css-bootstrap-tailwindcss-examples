@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dd, dt {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+       function ApplyClick(){
+           var size = document.getElementById("txtFontSize").value;
+           var color = document.getElementById("txtColor").value;
+           var style = document.getElementById("lstStyles").value;
+           var msg = document.getElementById("msg");
+
+           msg.innerHTML = "Sample Text".fontsize(size).fontcolor(color);
+
+           if(style=="bold") {
+               msg.innerHTML = "Sample Text".fontsize(size).fontcolor(color).bold();
+           } else {
+               msg.innerHTML = "Sample Text".fontsize(size).fontcolor(color).italics();
+           }
+       }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Choose Formats</dt>
+        <dd>
+            <label>Font Color</label> <input type="color" id="txtColor">
+        </dd>
+        <dd>
+            <label>Font Style</label> <select id="lstStyles"> <option value="bold">Bold</option> <option value="italic">Italic</option> </select>
+        </dd>
+        <dd>
+            <label>Fotn Size</label> <input id="txtFontSize" type="range" min="1" max="7" value="3">
+        </dd>
+        <dd> <button onclick="ApplyClick()">Apply</button> </dd>
+    </dl>
+    <p id="msg" align="center">Sample Text</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyTitle(){
+            var title = document.getElementById("txtTitle").value;
+            var msg = document.getElementById("msg");
+            var firstCharCode = title.charCodeAt(0);
+            console.log(firstCharCode);
+            if(firstCharCode>=65 && firstCharCode<=90) {
+                msg.innerHTML = "";
+            } else {
+                msg.innerHTML = "Title must start with uppercase letter".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Title</dt>
+        <dd><input type="text" id="txtTitle" onblur="VerifyTitle()"></dd>
+        <dd id="msg"></dd>
+    </dl>
+</body>
+</html>

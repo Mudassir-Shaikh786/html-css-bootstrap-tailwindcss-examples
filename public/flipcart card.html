@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 1fr 3.5fr 7.5fr;
+        }
+        .col-1 img {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            border:1px solid gray;
+        }
+        .col-2 {
+            padding-left: 20px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .btn-cart {
+            background-color: gold;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        .btn-buy {
+            background-color: rgb(245, 94, 6);
+            color:white;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            font-family: Arial;
+            font-size: 14px;
+            color: gray;
+        }
+        nav ul li::before {
+            content: " > ";
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        nav ul li:first-child::before {
+            content: "";
+        }
+        .col-body {
+            padding-left: 50px;
+        }
+        .ratings {
+            margin-top: 10px;
+            font-family: Arial;
+        }
+        .rate {
+            background-color: green;
+            color:white;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .price-container {
+            margin-top: 20px;
+            font-family: Arial;
+        }
+        .offers {
+            list-style: none;
+            margin-left: -40px;
+        }
+        .offers li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color:green;
+            font-size: 15px;
+        }
+        .offers li span {
+            color:gray;
+        }
+        .exchange {
+            width: 300px;
+            border:1px solid gray;
+        }
+        .row-1, .row-2 {
+            display: flex;
+            justify-content: space-between;
+            height:30px;
+            padding: 10px;
+           
+        }
+        .row-1 {
+            background-color: rgb(241, 240, 240);
+        }
+        .bi-check-circle {
+            color:blue;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+        <div class="col-1">
+            <div>
+                <img src="./images/apple iphone.jpg">
+            </div>
+            <div>
+                <img src="./images/flip-1.jpg">
+            </div>
+            <div>
+                <img src="./images/flip-2.jpg">
+            </div>
+            <div>
+                <img src="./images/flip-3.jpg">
+            </div>
+        </div>
+        <div class="col-2">
+            <div>
+                <img src="./images/apple iphone.jpg" width="100%" height="500">
+            </div>
+            <div class="buttons">
+                <div class="btn-cart"> <span class="bi bi-cart4"></span> ADD TO CART </div>
+                <div class="btn-buy"> <span class="bi bi-lightning-fill"></span> BUY NOW </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Mobiles & Ac...</li>
+                    <li>Mobiles</li>
+                    <li>Apple Mobiles</li>
+                    <li>Apple iPhone</li>
+                </ul>
+            </nav>
+            <div class="col-body">
+                <div>
+                    <font face="Arial" size="4"> Apple iPhone 15 (Black, 128 GB) </font>
+                </div>
+                <div class="ratings">
+                    <span class="rate"> 4.5 <span class="bi bi-star-fill"></span> </span>
+                    <span> &nbsp; <b> <font color="gray">34500 ratings & 2300 reviews</font> </b> </span>
+                </div>
+                <div class="price-container">
+                    <div> <font size="2" color="green"> &#8377; Extra 11901 off</font> </div>
+                    <br>
+                    <div>
+                        <span> <font size="5"> <b>&#8377; 65,999</b> </font> <font> <strike>&#8377; 79,999</strike> </font> <span> <font color="green">17% Off</font> </span> </span>
+                    </div>
+                    <div>
+                      <h3>Available Offers</h3>
+                      <ul class="offers">
+                        <li class="bi bi-tag-fill"> <span> <b>Bank Offer</b> Get ₹50 instant discount on first Flipkart UPI transaction on order of ₹200 and aboveT&C</span> </li>
+                        <li class="bi bi-tag-fill"> <span> <b>Bank Offer </b> % Cashback on Flipkart Axis Bank CardT&C</span> </li>
+                        <li class="bi bi-tag-fill"> <span> <b>Special Price</b> Get extra ₹11901 off (price inclusive of cashback/coupon)T&C</span> </li>
+                        <li class="bi bi-tag-fill"> <span> <b>Freebie</b> Flat ₹1000 off on Cleartrip hotels booking along with 300 supercoins on bookingT&C</span> </li>
+                      </ul>
+                      <div> <font color="blue"> View 16 more offers </font> </div>
+                   </div>
+                    <br><br>
+                   <div class="exchange">
+                      <div class="row-1">
+                         <span> <span class="bi bi-check-circle"></span> Buy Without Exchange</span>
+                         <span> &#8377 65,000 </span>
+                      </div>
+                      <div class="row-2">
+                        <span> <span class="bi bi-check-circle"></span> Buy With Exchange</span>
+                        <span> &#8377 25,000 </span>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

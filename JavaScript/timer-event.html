@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer delay</title>
+    <script>
+        function Message1(){
+            document.querySelector("p").innerHTML= "Hello !";
+        }
+        function Message2(){
+            document.querySelector("p").innerHTML="How are you?";
+        }
+        function Message3(){
+            document.querySelector("p").innerHTML="Welcome to Javascript";
+        }
+        var m1, m2, m3;
+        function bodyload(){
+         m1 = setTimeout(Message1, 3000);
+         m2 = setTimeout(Message2, 8000);
+         m3 = setTimeout(Message3, 15000);
+        }
+        function CancelClick(){
+            clearTimeout(m2);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button onclick="CancelClick()">Cancel Message2</button>
+    <p align="center"></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+         .Mobile+div {
+            display: none;
+         }
+         .Mobile:focus+div {
+            display: block;
+            color:red;
+            font-size: 14px;
+         }
+         .UserName+div {
+            display: none;
+         }
+         .UserName:focus+div {
+            display: block;
+            font-size: 14px;
+            color:red;
+         }
+    </style>
+</head>
+<body>
+   <form>
+       <dl>
+          <dt>User Name</dt>
+          <dd>
+             <input type="text" class="UserName" pattern="[A-Z]{4,10}" name="UserName">
+             <div>Name in Block Letters</div>
+          </dd>
+          <dt>Mobile</dt>
+          <dd>
+            <input type="text" class="Mobile" name="Mobile" placeholder="+91 and 10 digits" pattern="\+91\d{10}">
+            <div>+91 and 10 digits</div>
+          </dd>
+       </dl>
+       <button>Submit</button>
+   </form>
+</body>
+</html>

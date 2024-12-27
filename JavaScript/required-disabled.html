@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleChange(){
+            var requiredCheckbox = document.getElementById("optRequired");
+            var txtName = document.getElementById("txtName");
+            if(requiredCheckbox.checked) {
+                txtName.required = true;
+            } else {
+                txtName.required = false;
+            }
+           
+        }
+        function termsChange(){
+            var termsCheckbox = document.getElementById("optTerms");
+            var btnSubmit = document.getElementById("btnSubmit");
+            if(termsCheckbox.checked) {
+                btnSubmit.disabled = false;
+            } else {
+                btnSubmit.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" name="UserName" id="txtName"> <input type="checkbox" required onchange="handleChange()" id="optRequired"> required </dd>
+            <dt>Terms of Service</dt>
+            <dd>
+                <textarea rows="4" cols="40" disabled>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, tenetur impedit facere atque perspiciatis ipsam delectus accusantium modi vel, ipsa cupiditate obcaecati sint cum veritatis voluptates in doloremque, a debitis.</textarea>
+            </dd>
+            <dd><input type="checkbox" id="optTerms" onchange="termsChange()"> <label> I Accept </label> </dd>
+        </dl>
+        <button id="btnSubmit" disabled>Submit</button>
+    </form>
+</body>
+</html>

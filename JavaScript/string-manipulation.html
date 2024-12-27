@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        function VerifyName(){
+            var userName = document.getElementById("txtName").value;
+            var error = document.getElementById("lblNameError");
+            if(userName.length==0) {
+                error.innerHTML = "User Name Required".fontcolor('red');
+            } else {
+                if(userName.length<4) {
+                     error.innerHTML = "Name too short".fontcolor('red');
+                } else {
+                     error.innerHTML = "";
+                }
+            }
+        }
+
+        function VerifyComments(){
+            var comments = document.getElementById("txtComments").value;
+            var commentsLength = comments.length;
+            var maxlength = 100;
+            document.getElementById("lblCount").innerHTML = `${(maxlength-commentsLength)} chars remaining`;
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="txtName" onkeyup="VerifyName()"></dd>
+        <dd id="lblNameError"></dd>
+        <dt>Your Comments</dt>
+        <dd>
+            <textarea onkeyup="VerifyComments()" rows="4" cols="40" maxlength="100" id="txtComments"></textarea>
+        </dd>
+        <dd id="lblCount">Max 100 chars only</dd>
+    </dl>
+</body>
+</html>

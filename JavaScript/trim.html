@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SubmitClick(){
+             var otp = document.getElementById("txtOtp").value;
+             if(otp.trim()=="2345") {
+                document.write("Success..");
+             } else {
+                alert("Invalid OTP");
+             }
+        }
+    </script>
+</head>
+<body>
+    OTP : <input type="text" id="txtOtp"> <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>

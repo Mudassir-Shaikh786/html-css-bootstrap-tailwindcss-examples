@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url("../public/images/a3.jpg"), url("../public/images/a12.jpg");
+            background-repeat: no-repeat, repeat;
+            background-position: center center;
+            background-size: 400px 400px, 100px 100px;
+            background-attachment: fixed, scroll;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi impedit vel doloribus ducimus sequi eligendi accusantium dolor dolore consectetur quas accusamus, culpa a laudantium voluptatum cumque vitae eveniet nobis labore!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas hic architecto, adipisci, sed soluta rerum debitis quisquam qui harum sequi perferendis aperiam ratione culpa. A fugit optio maxime libero? Beatae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, explicabo quisquam deserunt distinctio deleniti nostrum, totam, et esse voluptate dicta eaque sed dolores maxime suscipit alias vel harum excepturi.
+
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (orientation:landscape)
+        {
+            body {
+                background-image: url("../public/images/men-fashion.jpg");
+                background-size: cover;
+            }
+        }
+        @media screen and (orientation:portrait)
+        {
+            body {
+                background-image: url("../public/images/women-fashion.jpg");
+                background-size: cover;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi impedit vel doloribus ducimus sequi eligendi accusantium dolor dolore consectetur quas accusamus, culpa a laudantium voluptatum cumque vitae eveniet nobis labore!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas hic architecto, adipisci, sed soluta rerum debitis quisquam qui harum sequi perferendis aperiam ratione culpa. A fugit optio maxime libero? Beatae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, explicabo quisquam deserunt distinctio deleniti nostrum, totam, et esse voluptate dicta eaque sed dolores maxime suscipit alias vel harum excepturi.
+
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       ol {
+        list-style-image: url("../public/icons/star-icon.jpg");
+        font-size: 34px;
+        list-style-position: inside;
+       }
+        li {
+            border:1px solid black;
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+    </ol>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        img {
+            position: absolute;
+        }
+
+        .pic {
+            opacity: 0.4;
+        }
+
+        .pic-copy {
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+            -moz-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            transition: 5s;
+        }
+
+        .pic-copy:hover {
+            opacity: 1;
+            transform: translate(50px, 50px);
+            -webkit-transform: translate(50px, 50px);
+            -moz-transform: translate(50px, 50px);
+            -o-transform: translate(50px, 50px);
+            -ms-transform: translate(50px, 50px);
+            transition: 2s;
+        }
+       
+    </style>
+</head>
+<body>
+     <img class="pic" src="../public/images/men-fasion.jpg" width="200" height="300">
+     <img class="pic-copy" src="../public/images/women-fasion.jpg" width="200" height="300">
+</body>
+</html>

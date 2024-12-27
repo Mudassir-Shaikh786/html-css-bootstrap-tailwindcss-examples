@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+       input:required+span {
+        display: inline;
+        color:red;
+       }
+       input:optional+span {
+         display: none;
+       }
+       input:required {
+          border:1px solid red;
+       }
+    </style>
+</head>
+<body>
+   <form>
+       <dl>
+         <dt>User Name</dt>
+         <dd><input type="text" required><span>*</span></dd>
+         <dt>Password</dt>
+         <dd><input type="password" ><span>*</span></dd>
+         <dt>Mobile</dt>
+         <dd><input type="text" required ><span>*</span></dd>
+       </dl>
+       <button>Register</button>
+   </form>
+</body>
+</html>

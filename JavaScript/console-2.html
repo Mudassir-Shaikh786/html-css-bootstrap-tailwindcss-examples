@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <script>
+        function bodyload(){
+            str = location.search;
+            equalPosition = str.indexOf("=");
+
+            document.getElementById("lblUser").innerHTML = str.slice(equalPosition+1);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <h2>Home</h2>
+    <p>Hello ! <span id="lblUser"></span></p>
+</body>
+</html>

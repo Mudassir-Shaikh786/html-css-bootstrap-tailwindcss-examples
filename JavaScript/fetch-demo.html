@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script>
+        function bodyload(){
+
+            fetch("../data/mobiles.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(mobiles){
+                mobiles.map(function(mobile){
+                    var tr = document.createElement("tr");
+                    var tdName = document.createElement("td");
+                    var tdPrice = document.createElement("td");
+                    var tdImage = document.createElement("td");
+
+                    tdName.innerHTML = mobile.Name;
+                    tdPrice.innerHTML = mobile.Price;
+                    tdImage.innerHTML = `<img width="100" height="100" src=${mobile.Image}>`;
+
+                    tr.appendChild(tdName);
+                    tr.appendChild(tdPrice);
+                    tr.appendChild(tdImage);
+
+                    document.querySelector("tbody").appendChild(tr);
+                })
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+            .finally(function(){
+                console.log("Request End");
+            })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

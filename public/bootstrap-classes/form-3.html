@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .terms+label {
+            color:red;
+        }
+        .terms:checked+label {
+            color:green;
+        }
+        .terms~button {
+            display: none;
+        }
+        .terms:checked~button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <form>
+      <fieldset>
+          <legend>Terms of Service</legend>
+          <textarea rows="4" cols="40" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia eum nemo, quis reprehenderit et error consectetur veritatis iusto quisquam! Odio officia sint dicta nesciunt necessitatibus eaque, pariatur laborum! Asperiores!</textarea>
+          <br><br>
+          <input type="checkbox" class="terms"> <label> I Accept </label>
+          <br><br>
+          <button>Register</button>
+      </fieldset>
+   </form>
+</body>
+</html>

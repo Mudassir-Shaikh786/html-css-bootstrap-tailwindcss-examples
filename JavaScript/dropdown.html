@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = [
+            {Category:"Electronics", Products:["Mobiles", "Televisions", "Watches"]},
+            {Category:"Footwear", Products: ["Casuals", "Sneakers", "Boots"]}
+        ]
+        function bodyload(){
+             var firstOption = document.createElement("option");
+             firstOption.innerHTML = "Select a Product";
+             document.querySelector("select").appendChild(firstOption);
+             data.map(function(item){
+                  var optgroup  = document.createElement("optgroup");
+                  optgroup.label = item.Category;
+                  item.Products.map(function(product){
+                     var option = document.createElement("option");
+                     option.text = product;
+                     option.value = product;
+                     optgroup.appendChild(option);
+                     document.querySelector("select").appendChild(optgroup);
+                  })
+             })
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+     <select></select>
+</body>
+</html>

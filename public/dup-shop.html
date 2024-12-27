@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper. Template Responsive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../shopper-templete/index.css">
+    <style>
+        @media screen and (orientation:landscape){
+body{
+    font-family: bahnschrift;
+    
+}
+
+.nav1{
+    padding:0px 20px 0px 50px;
+    margin:0px -10px 0px -10px;
+}
+.navbar-brand{
+    font-size:11.2px;
+    letter-spacing: 0.5px;
+    margin-right: 120px;
+    font-weight: bold;
+}
+.navbar-brand .bi-truck{
+    font-size:15px;
+}
+#us img{
+    margin-top: -5px;
+}
+.nav-link{
+    font-weight: bold;
+    font-size:13px;
+    margin-top: 8px;
+    
+    
+}
+.nav-item .nav-link{
+    margin-right:20px;
+}
+.shipping1{
+    margin-left: 100px;
+}
+.contact{
+    margin-right: 70px;
+}
+
+
+.icons1{
+    margin-left:50px;
+    margin-top:-5px;
+}
+
+.icons1 img{
+    margin-right: 10px;
+}
+.nav2{
+    margin-bottom: 20px;
+}
+.nav2 .nav-link{
+    font-size: 16px;
+}
+.shopper{
+    font-weight: bold;
+    font-size: 25px;
+    margin: -5px 250px 0px 50px;
+    
+}
+.icons2{
+    font-weight: bold;
+    margin-left:160px;
+    margin-top:15px;
+    font-size:17px;
+}
+.icons2 span{
+    margin-right: 20px;
+}
+.nav2 .nav-link:hover{
+    color:red;
+}
+
+.icons2 span:hover{
+    color:red;
+    cursor: pointer;
+}
+.cart{
+    position:relative;
+}
+.count{
+    display:inline-block;
+    text-align: center;
+    background-color: red;
+    color:white;
+    height:22px;
+    width:22px;
+    border-radius: 22px;
+    position:absolute;
+    left:12px;
+    top:-12px;
+}
+
+article{
+    font-family: arial;
+    font-size:12px;
+    word-spacing: 5px;
+    background-image: url("../public/Images/Shopper/aside-background.jfif");
+    margin-top:-20px;
+
+}
+
+.row1{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-top: 10px;
+}
+
+.img1, .img2, .img3{
+    background-size: cover;
+    height:500px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img1{
+    background-image: url("../public/Images/women-fashion.jpg");
+    
+}
+.img2{
+    background-image: url("../public/Images/men-fashion.jpg");
+
+}
+.img3{
+    background-image: url("../public/Images/kids-fashion.jpg");
+}
+
+    main{
+        font-family: arial;
+    }
+    .title{
+                
+        font-weight: bold;
+        font-size:40px;
+        color:white;
+        text-shadow: 3px 3px black;
+        
+        
+    }
+    
+    .shop{
+        background-color: white;
+        font-size:17px;
+        font-weight: bold;
+        width:170px;
+        text-align: center;
+        display: inline-block;
+        padding:10px;
+        box-shadow: 3px 3px black;
+    }
+
+    .row1 div:hover{
+
+        background-color: rgb(20, 20, 20);
+        opacity: 0.8;
+        
+    }
+    .row1 div:hover .bi-arrow-right{
+        padding-left: 10px;
+        transition:1s;
+    }
+
+    .row2 ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .row2{
+        margin: 50px 80px 50px 50px;
+        
+    }
+    .row2 span{
+        font-size:13px;
+    }
+    h6{
+        
+        font-size:13px;
+
+        font-weight: bold;
+    }
+
+    .row3{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height:400px;
+        margin-bottom: 20px;
+        
+    }
+    .row3 div:hover .bi-arrow-right{
+        margin-left: 20px;
+        box-shadow: 0px 0px 5px 5px white;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        transition:1s;
+    }
+    .row4 div:hover .bi-arrow-right{
+        margin-left: 20px;
+        box-shadow: 0px 0px 5px 5px white;
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        transition:1s;
+    }
+
+    .row4{
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        height:400px;
+        
+    }
+    .img4{
+        
+        background-size: 100% 100%;
+
+        margin-right:10px;
+        position:relative;
+        overflow: hidden;
+
+    }
+    .img4 img:hover{
+        transform: translateX(-10px);
+    }
+
+    .bags, .sweatshirts{
+        position:absolute;
+        top:100px;
+        left:120px;
+        font-weight: bold;
+        font-size:25px;
+        color:white;
+        text-shadow: 0px 0px 20px black;
+
+    }
+    .img4 .shopnow, .img7 .shopnow{
+        color:white;
+        font-weight: bold;
+        font-size:20px;
+        position:absolute;
+        top:150px;
+        left:150px;
+        text-shadow: 0px 0px 20px black;
+
+    }
+    .img5{
+        
+        background-size: 100% 100%;
+        margin-left:10px;
+        position:relative;
+        overflow: hidden;
+    }
+    .img5 img:hover{
+        transform: translate(-10px);
+    }
+    .img5 .shopnow, .img6 .shopnow{
+        color: white;
+        font-weight: bold;
+        font-size:20px;
+        position:absolute;
+        top:300px;
+        left:100px;
+        text-shadow: 0px 0px 5px black;
+
+    }
+    .shirts, .dresses{
+        position:absolute;
+        top:250px;
+        left:100px;
+        font-weight: bold;
+        font-size:25px;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+
+
+    }
+
+    .offer{
+        position:absolute;
+        background-color: rgb(236, 93, 93);
+        color:white;
+        width:100px;
+        height:100px;
+        border-radius: 100px;
+        text-align:center;
+        top:20px;
+        right:20px;
+    }
+
+
+    .img6{
+    
+        background-size: 100% 100%;
+        margin-right:10px;
+        position:relative;
+        overflow: hidden;
+    }
+    .img6 img:hover{
+        transform: translateX(-10px);
+    }
+    .img7{
+        
+        background-size: 100% 100%;
+        margin-left:10px;
+        position:relative;
+        overflow: hidden;
+    }
+    .img7 img:hover{
+        transform: translateX(-10px);
+    }
+
+    footer{
+        background-color: black;
+        color:white;
+        padding:30px;
+        font-family:arial;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top:50px;
+    }
+    .row-1{
+        text-align:center;
+        font-size:17px;
+        font-family:arial;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    .row-2{
+        text-align:center;
+        font-size:14px;
+        font-family:arial;
+        padding-bottom: 30px;
+        
+    }
+    .email{
+        width:350px;
+        display:inline-block;
+        text-align:left;
+        background-color: #3d3d3d;
+        padding:20px;
+    }
+    .subscribe{
+        background-color: #292121;
+        padding: 20px;
+        width:150px;
+        display:inline-block;
+
+    }
+     
+    .row-3{
+        display:grid;
+        grid-template-columns: 2fr 10fr;
+        
+        
+    }
+    
+    .col2{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-left: -50px;
+    }
+    .footer-title{
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+        padding-bottom:20px;
+        display:block;
+        margin-top: 5px;
+    }
+    .bi-c-circle{
+        font-size:12px;
+        color:gray;
+
+    }
+    .last-line{
+        display: flex;
+        justify-content: space-between;
+        margin-left:50px;
+        margin-right:50px;
+    }
+    aside{
+        display:flex;
+    }
+    aside span{
+        font-size:15px;
+        padding:5px;
+    }
+
+    .service-title{
+        font-size: 14px;
+        font-family: arial;
+        font-weight: bold;
+        padding-bottom:20px;
+        display:block;
+    }
+
+    .service-title~span, address span{
+        display:block;
+        padding-bottom:15px;
+        font-size: 12px;
+        color:gray;
+    }
+
+    .row5, .row6{
+        display:grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-left:80px;
+        margin-bottom: 50px;
+
+        
+    }
+    
+    
+    .img8-shoes, .img9-dresses, 
+    .img10-shoes, .img11-tops, .img12-dresses,
+    .img13-bags, .img14-skirts, .img15-shoes{
+        background-size: 100% 100%;
+        height:300px;
+        width:250px;
+    
+    }
+    .img8-shoes{
+
+        background-image: url("../Public/Images/Shopper/shoes1.JPG");
+        position: relative;
+    }
+    
+    .hiding-buttons{
+        position: absolute;
+        display: flex;
+        bottom:-50px;
+        left:20px;
+        display: none;
+        transition: 2s;
+        
+    }
+    .hiding-buttons span{
+        height: 30px;
+        width:30px;
+        border-radius: 30px;
+        padding:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        background-color: white;
+        
+                
+    }
+
+    .img8-shoes:hover{
+        background-image: url("../Public/Images/Shopper/shoes2.webp");
+
+    }
+    .img8-shoes:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    
+    .hiding-buttons span:hover{
+        background-color: red;
+        color:white;
+        cursor: pointer;
+    }
+    
+
+  
+    .img9-dresses{
+        background: url("../Public/Images/Shopper/dresses1.JPG");
+        background-size: cover;
+        position:relative;
+    }
+    .img9-dresses:hover{
+        background: url("../Public/Images/Shopper/dresses2.jpg");
+        background-size: cover;
+
+    }
+    .img9-dresses:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img10-shoes{
+        background: url("../Public/Images/Shopper/shoes3.JPG");
+        position:relative;
+
+    }
+    .img10-shoes:hover{
+        background: url("../Public/Images/Shopper/shoes4.jpg");
+        background-size: cover;
+
+    }
+    .img10-shoes:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img11-tops{
+        background: url("../Public/Images/Shopper/tops1.webp");
+        background-size: cover;
+        position:relative;
+
+    }
+    .img11-tops:hover{
+        background: url("../Public/Images/Shopper/tops2.webp");
+        background-size: cover;
+
+    }
+    .img11-tops:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img12-dresses{
+        background-image: url("../Public/Images/Shopper/dresses3.jpg");
+        position:relative;
+
+    }
+    .img12-dresses:hover{
+        background-image: url("../Public/Images/Shopper/dresses4.JPG");
+        background-size: cover;
+
+    }
+    .img12-dresses:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img13-bags{
+        background-image: url("../Public/Images/Shopper/bags1.JPG");
+        position:relative;
+
+    }
+    .img13-bags:hover{
+        background-image: url("../Public/Images/Shopper/bags2.JPG");
+        background-size: cover;
+
+    }
+    .img13-bags:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    .img14-skirts{
+        background-image: url("../Public/Images/Shopper/skirts1.avif");
+        position:relative;
+
+    }
+    .img14-skirts:hover{
+        background-image: url("../Public/Images/Shopper/skirts2.jpg");
+        background-size: cover;
+
+    }
+    .img14-skirts:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    .img15-shoes{
+        background-image: url("../Public/Images/Shopper/shoes5.jpg");
+        position:relative;
+
+    }
+    .img15-shoes:hover{
+        background-image: url("../Public/Images/Shopper/shoes6.JPG");
+        background-size: cover;
+
+    }
+    .img15-shoes:hover:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+
+
+    .discover{        
+        padding:10px 30px 10px 30px;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+    }
+    .carousel2{
+        display:none;
+    }
+
+    .row7{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .row7 img{
+        margin-right: 5px;
+    }
+    .smallimgs{
+        position:relative;
+    }
+    .likes-comments{
+        position: absolute;
+        top:90px;
+        left:50px;
+        display: none;
+        
+    }
+    .likes-comments span{
+        margin:5px;
+    }
+    .smallimgs:hover img{
+        opacity: 0.5;
+        background-color: black;
+    }
+    .smallimgs:hover .likes-comments{
+        position:relative;
+        display:contents;
+        top:-120px;
+        left:50px;
+        display: flex;
+
+    }
+
+    .row8{
+        display: flex;
+        margin-left:50px;
+        margin-top:50px;
+        
+    }
+    .row8 img{
+        margin-right:30px;
+    }
+
+}
+
+@media screen and (orientation:portrait){
+    .nav1{
+        padding:0px 10px 0px 10px;
+        margin:0px -10px 0px -10px;
+    }
+    .navbar-brand{
+            font-size:13px;
+            margin-right: 30px;
+        }
+    
+    .free .navbar-toggler-icon{
+        font-size: 13px;
+    }
+    #us img{
+    margin-top: -5px;
+}
+
+    .nav-link{
+        font-weight: bold;
+    }
+
+        .shopper{
+            font-weight: bold;
+            font-size: 25px;
+        }  
+
+        .icons2{
+            font-weight: bold;
+            
+            font-size:15px;
+        }
+        .icons2 span{
+            margin-right: 10px;
+        }
+
+        .nav2 button:hover{
+            color:red;
+        }
+        
+        .icons2 span:hover{
+            color:red;
+            cursor: pointer;
+        }
+        
+        .cart{
+            position:relative;
+        }
+        .count{
+            display:inline-block;
+            text-align: center;
+            background-color: red;
+            color:white;
+            height:22px;
+            width:22px;
+            border-radius: 22px;
+            position:absolute;
+            left:12px;
+            top:-12px;
+        }
+
+        article{
+            font-family: arial;
+            font-size:12px;
+            word-spacing: 5px;
+            background-image: url("../public/Images/Shopper/aside-background.jfif");
+            
+        }
+
+        .row1{
+            display: grid;
+            grid-template-columns: 12fr;
+            margin-top: 10px;
+        }
+        
+        .img1{
+            background-size: cover;
+            height:500px;
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .img1{
+            background-image: url("../public/Images/women-fashion.jpg");
+            
+        }
+        
+        .img2, .img3{
+            display: none;
+        
+        }
+        
+            main{
+                font-family: arial;
+            }
+            .title{
+                
+                font-weight: bold;
+                font-size:40px;
+                color:white;
+                text-shadow: 3px 3px black;
+                
+                
+            }
+            
+            .shop{
+                background-color: white;
+                font-size:17px;
+                font-weight: bold;
+                width:170px;
+                text-align: center;
+                display: inline-block;
+                padding:10px;
+                box-shadow: 3px 3px black;
+            }
+        
+            .row1 div:hover{
+        
+                background-color: rgb(20, 20, 20);
+                opacity: 0.8;
+                
+            }
+            .row1 div:hover .bi-arrow-right{
+                padding-left: 10px;
+                transition:1s;
+            }
+        
+            .row2 ul{
+                list-style: none;
+    
+            }
+            .row2 ul li{
+                margin-bottom: 15px;
+            }
+    
+
+            .row2 span{
+                font-size:13px;
+            
+            }
+            h6{
+                
+                font-size:13px;
+                font-weight: bold;
+    
+            }
+
+            .row3, .row4{
+                display: grid;
+                grid-template-columns: 12fr;
+                height:1300px;
+                
+            }
+            .row3 div, .row4 div{
+                margin-bottom: 10px;
+            }
+            .row3 div:hover .bi-arrow-right{
+                margin-left: 20px;
+                box-shadow: 0px 0px 5px 5px rgb(197, 47, 47);
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                transition:1s;
+            }
+            .row4 div:hover .bi-arrow-right{
+                margin-left: 20px;
+                box-shadow: 0px 0px 5px 5px white;
+                background-color: black;
+                color:white;
+                font-weight: bold;
+                transition:1s;
+            }
+            .img4{
+        
+                height:600px;
+                
+                margin-right:10px;
+                position:relative;
+                overflow: hidden;
+        
+            }
+            .img4 img:hover{
+                transform: translateX(-10px);
+            }
+            
+            .bags, .sweatshirts{
+                position:absolute;
+                top:100px;
+                left:120px;
+                font-weight: bold;
+                font-size:25px;
+                color:white;
+                text-shadow: 0px 0px 20px black;
+        
+            }
+            .img4 .shopnow, .img7 .shopnow{
+                color:white;
+                font-weight: bold;
+                font-size:20px;
+                position:absolute;
+                top:150px;
+                left:150px;
+                text-shadow: 0px 0px 20px black;
+        
+            }
+            .img5{
+        
+                height:600px;
+        
+                margin-right:10px;
+                position:relative;
+                overflow: hidden;
+        
+            }
+            .img5 img:hover{
+                transform: translateX(-10px);
+            }
+
+            .img5 .shopnow, .img6 .shopnow{
+                color:white;
+                font-weight: bold;
+                font-size:20px;
+                position:absolute;
+                top:300px;
+                left:100px;
+                text-shadow: 0px 0px 20px black;
+        
+            }
+            .shirts, .dresses{
+                position:absolute;
+                top:250px;
+                left:100px;
+                font-weight: bold;
+                font-size:25px;
+                color:white;
+                text-shadow: 0px 0px 20px black;
+             }
+             
+             .offer{
+                position:absolute;
+                background-color: rgb(236, 93, 93);
+                color:white;
+                width:100px;
+                height:100px;
+                border-radius: 100px;
+                text-align:center;
+                top:20px;
+                right:20px;
+            }
+            .img6{
+        
+                height:600px;
+        
+                margin-right:10px;
+                position:relative;
+                overflow: hidden;
+        
+            }
+            .img6 img:hover{
+                transform: translateX(-10px);
+            }
+
+            .img7{
+        
+                height:600px;
+        
+                margin-right:10px;
+                position:relative;
+                overflow: hidden;
+        
+            }
+            .img7 img:hover{
+                transform: translateX(-10px);
+            }
+
+        
+            footer{
+                background-color: black;
+                color:white;
+                padding:30px;
+                font-family:arial;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-top:50px;
+            }
+            .row-1{
+                text-align:center;
+                font-size:17px;
+                font-family:arial;
+                font-weight: bold;
+                padding-bottom: 30px;
+            }
+            .row-2{
+                text-align:center;
+                font-size:14px;
+                font-family:arial;
+                padding-bottom: 30px;
+                margin-top:30px;
+                
+            }
+            .email{
+                width:200px;
+                display:inline-block;
+                text-align:left;
+                background-color: #3d3d3d;
+                padding:20px;
+            }
+            .subscribe{
+                background-color: #292121;
+                padding: 20px;
+                width:150px;
+                display:inline-block;
+        
+            }
+             
+            .row-3{
+                display:grid;
+                grid-template-columns: 12fr;
+                padding-left: 20px;
+                
+            }
+            .footer-title{
+                font-size: 20px;
+                font-family: arial;
+                font-weight: bold;
+                padding-bottom:5px;
+                display:block;
+            }
+            .bi-c-circle{
+                font-size:12px;
+                color:gray;
+        
+            }
+            .last-line{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .last-line span{
+                margin:10px;
+            }
+
+            aside span{
+                font-size:15px;
+                padding:5px;
+            }
+        
+            .service-title{
+                font-size: 14px;
+                font-family: arial;
+                font-weight: bold;
+                padding-bottom:20px;
+                display:block;
+            }
+        
+            .service-title~span, address span{
+                display:block;
+                padding-bottom:15px;
+                font-size: 12px;
+                color:gray;
+            }
+        
+            .row-3{
+                display:grid;
+                grid-template-columns: 12fr;
+                
+                
+            }
+            .col1{
+                margin-bottom:30px;
+            }
+            
+            .col2{
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                
+            }
+
+            .row5, .row6{
+                display:grid;
+                grid-template-columns: 6fr 6fr;
+                
+                margin-bottom: 10px;
+                margin-left: 0px;
+        
+                
+            }
+            .text-below{
+                margin-left:10px;
+            }
+            
+            
+            .img8-shoes, .img9-dresses, 
+    .img10-shoes, .img11-tops, .img12-dresses,
+    .img13-bags, .img14-skirts, .img15-shoes{
+        background-size: 100% 100%;
+        height:250px;
+        width:200px;
+        margin:10px;
+    
+    }
+    .img8-shoes{
+
+        background-image: url("../Public/Images/Shopper/shoes1.JPG");
+        position: relative;
+    }
+    
+    .hiding-buttons{
+        position: absolute;
+        display: flex;
+        bottom:-50px;
+        left:20px;
+        display: none;
+        transition: 2s;
+        
+    }
+    .hiding-buttons span{
+        height: 30px;
+        width:30px;
+        border-radius: 30px;
+        padding:5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        background-color: white;
+        
+                
+    }
+
+    .img8-shoes:hover{
+        background-image: url("../Public/Images/Shopper/shoes2.webp");
+
+    }
+    .img8-shoes:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    
+    .hiding-buttons span:hover{
+        background-color: red;
+        color:white;
+        cursor: pointer;
+    }
+    
+
+  
+    .img9-dresses{
+        background: url("../Public/Images/Shopper/dresses1.JPG");
+        background-size: cover;
+        position:relative;
+    }
+    .img9-dresses:hover{
+        background: url("../Public/Images/Shopper/dresses2.jpg");
+        background-size: cover;
+
+    }
+    .img9-dresses:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img10-shoes{
+        background: url("../Public/Images/Shopper/shoes3.JPG");
+        position:relative;
+
+    }
+    .img10-shoes:hover{
+        background: url("../Public/Images/Shopper/shoes4.jpg");
+        background-size: cover;
+
+    }
+    .img10-shoes:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img11-tops{
+        background: url("../Public/Images/Shopper/tops1.webp");
+        background-size: cover;
+        position:relative;
+
+    }
+    .img11-tops:hover{
+        background: url("../Public/Images/Shopper/tops2.webp");
+        background-size: cover;
+
+    }
+    .img11-tops:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img12-dresses{
+        background-image: url("../Public/Images/Shopper/dresses3.jpg");
+        position:relative;
+
+    }
+    .img12-dresses:hover{
+        background-image: url("../Public/Images/Shopper/dresses4.JPG");
+        background-size: cover;
+
+    }
+    .img12-dresses:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+
+    .img13-bags{
+        background-image: url("../Public/Images/Shopper/bags1.JPG");
+        position:relative;
+
+    }
+    .img13-bags:hover{
+        background-image: url("../Public/Images/Shopper/bags2.JPG");
+        background-size: cover;
+
+    }
+    .img13-bags:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    .img14-skirts{
+        background-image: url("../Public/Images/Shopper/skirts1.avif");
+        position:relative;
+
+    }
+    .img14-skirts:hover{
+        background-image: url("../Public/Images/Shopper/skirts2.jpg");
+        background-size: cover;
+
+    }
+    .img14-skirts:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+
+    .img15-shoes{
+        background-image: url("../Public/Images/Shopper/shoes5.jpg");
+        position:relative;
+
+    }
+    .img15-shoes:hover{
+        background-image: url("../Public/Images/Shopper/shoes6.JPG");
+        background-size: cover;
+
+    }
+    .img15-shoes:hover:hover .hiding-buttons{
+        bottom:10px;
+        display: contents;
+        display: flex;
+        
+    }
+    .discover{        
+        padding:10px 30px 10px 30px;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+    }
+
+    .carousel1{
+        display: none;
+    }
+
+    .row7{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-left:20px;
+            margin-bottom: 10px;
+    }
+    .row7 img{
+            
+            margin-bottom: 5px;
+    }
+    .smallimgs{
+             position:relative;
+    }
+    .likes-comments{
+            position: absolute;
+            top:90px;
+            left:50px;
+            display: none;
+                
+    }
+    .likes-comments span{
+             margin:5px;
+    }
+    .smallimgs:hover img{
+             opacity: 0.5;
+             background-color: black;
+    }
+    .smallimgs:hover .likes-comments{
+             position:relative;
+             display:contents;
+             top:-120px;
+             left:50px;
+             display: flex;
+        
+    }
+        
+
+    .row8{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin: 20px 50px 20px 50px;
+    }
+    .row8 img{
+            margin:10px;
+    }
+     
+       
+}
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light nav1">
+            <div class="container-fluid">
+                <div class="navbar-brand fw-semibold free"><span class="bi bi-truck me-2"></span>FREE SHIPPING WORLDWIDE</div>
+                
+                <button data-bs-target="#nav1-items" data-bs-toggle="collapse" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="nav1-items">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../Public/Images/Shopper/us.JPG" width="17" height="17">United States
+                            </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="us">
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">
+                                            <img src="../Public/Images/Shopper/us.JPG" width="15" height="15">
+                                            United States
+                                        </span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">
+                                            <img src="../Public/Images/Shopper/canada.JPG" width="15" height="15">
+                                            Canada
+                                        </span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">
+                                            <img src="../Public/Images/Shopper/germany.JPG" width="15" height="15">
+                                            Germany
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="usd" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USD
+                            </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="usd">
+                        
+                                        <li class="dropdown-item">
+                                            <span class="dropdown-item-text">
+                                                USD
+                                            </span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span class="dropdown-item-text">
+                                                EUR
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle english1" id="english" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </a>
+    
+                                    <ul class="dropdown-menu" aria-labelledby="english">
+                            
+                                        <li class="dropdown-item">
+                                            <span class="dropdown-item-text">
+                                                English
+                                            </span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span class="dropdown-item-text">
+                                                French
+                                            </span>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <span class="dropdown-item-text">
+                                                German
+                                            </span>
+                                        </li>
+                                    </ul>
+                                
+                            </li>
+
+                            <li class="nav-item shipping1">
+                                <a class="nav-link" id="shipping" role="button">
+                                    Shipping
+                                </a>
+    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="shipping" role="button">
+                                    FAQ
+                                </a>
+    
+                            </li>
+                            <li class="nav-item contact">
+                                <a class="nav-link" id="shipping" role="button">
+                                    Contact
+                                </a>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                
+                                    <div class="icons1">
+                                        <img src="../Public/Images/Shopper/header/facebook.JPG" height="25" width="25">
+                                        <img src="../Public/Images/Shopper/header/instagram.JPG" height="25" width="25">
+                                        <img src="../Public/Images/Shopper/header/twitter.JPG" height="25" width="25">
+                                        <img src="../Public/Images/Shopper/header/last.JPG" height="25" width="25">
+                                    </div>
+                                </a>
+    
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg nav2">
+            <div class="container-fluid">
+                <div class="navbar-brand shopper">Shopper.</div>
+                <button data-bs-target="#nav2-items" data-bs-toggle="collapse" class="btn navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="nav2-items">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="home">
+                            <li class="dropdown-item">
+                            <span class="dropdown-item-text">Default</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Classic</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Fashion</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Boxed</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Simple</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Asymmetric</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Sidenav</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span class="dropdown-item-text">Landing</span>
+                            </li>
+                    </ul>
+               
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="catelog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catelog
+                            </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="catelog">
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">WOMEN</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">MEN</span>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <span class="dropdown-item-text">KIDS</span>
+                                    </li>
+
+                                </ul>
+                    
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="shop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="shop">
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Shop</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Support</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Product</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Payment</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Account</span>
+                        </li>
+                    </ul>
+                    
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="pages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="pages">
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">About</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Contact Us</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Store Locator</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">FAQ</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Coming Soon</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">404</span>
+                        </li>
+
+                    </ul>
+                    
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="blog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="blog">
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Blog</span>
+                        </li>
+                        <li class="dropdown-item">
+                            <span class="dropdown-item-text">Blog Post</span>
+                        </li>
+                    </ul>
+                    
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" id="blog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Docs
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                                         
+                            <div class="d-flex icons2">
+                                <span class="bi bi-search"></span>
+                                <span class="bi bi-person"></span>
+                                <span class="bi bi-heart"></span>
+                                <span class="cart">
+                                <span class="bi bi-cart3"></span>
+                                <span class="count">2</span>
+                            </div>
+                        
+                    </li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <article class="p-2 text-center">
+            <span class="bi bi-lightning-fill text-warning"></span>
+            <span class="text-white fw-bold">HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+            <span class="bi bi-lightning-fill text-warning"></span>
+        </article>
+
+        <main>
+        
+            <div class="row1">
+                <div class="img1">
+                    
+                    <span class="title women-title">Women</span>
+                    <span class="shop women-shop" role="button">Shop Women <span class="bi bi-arrow-right"></span>
+                    
+                </div>
+                <div class="img2">
+                    <span class="title men-title">Men</span>
+                    <span class="shop men-shop" role="button">Shop Men <span class="bi bi-arrow-right"></span>
+                </div>
+                <div class="img3">
+                    <span class="title kids-title">Kids</span>
+                    <span class="shop kids-shop" role="button">Shop Kids <span class="bi bi-arrow-right"></span>
+                </div>
+            </div>
+        </main>
+        
+        <div class="row2 mt-4">
+            <ul>
+                <li>
+                    <ul class="d-flex">
+                        <li>
+                            <span class="bi bi-truck text-danger fs-5 me-4"></span>
+                        </li>
+                        <li>
+                            <h6>FREE SHIPPING</h6>
+                            <span class="text-ligt">From all orders over $100</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="d-flex">
+                        <li>
+                            <span class="bi bi-repeat text-danger fs-5 me-4"></span>
+                        </li>
+                        <li>
+                            <h6>FREE RETURNS</h6>
+                            <span class="text-ligt">Returns money within 30 days</span>
+                        </li>
+                    </ul>                    
+                </li>
+                <li>
+                    <ul class="d-flex">
+                        <li>
+                            <span class="bi bi-lock text-danger fs-5 me-4"></span>
+                        </li>
+                        <li>
+                            <h6>SECURE SHOPPING</h6>
+                            <span class="text-ligt">You are in safe hands</span>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <ul class="d-flex">
+                        <li>
+                            <span class="bi bi-tag text-danger fs-5 me-4"></span>
+                        </li>
+                        <li>
+                            <h6>OVER 10,000 STYLES</h6>
+                            <span class="text-ligt">We have everything you need</span>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="text-center m-4">
+            <span class="fw-bold" style="color:gray"> NEW COLLECTION</span>
+            <h3 class="p-3 fw-bold fs-2">Best Pics 2019</h3>
+            <span>Appear, dry there darknesss they're seas, dry waters thing fly midst. Beast, <br>
+            above fly brought Very green</span>
+        </div>
+
+        <div class="ms-4 me-4">
+            <div class="row3">
+                <div class="img4">
+                    <img src="../Public/Images/Shopper/bag.webp" width="440px" height="100%">
+                    
+                    <span class="bags">Bags Collection</span>
+                    <span class="shopnow">Shop now
+                        <span class="bi bi-arrow-right"></span>
+                    </span>
+                </div>
+                <div class="img5">
+                    <img src="../Public/Images/Shopper/mens-shirt.JPG" width="860px" height="100%">
+                    
+                    <span class="shirts">Printed Men's shirts</span>
+                    <span class="shopnow">Shop now
+                        <span class="bi bi-arrow-right"></span>
+                    </span>
+                    <span class="offer d-flex flex-column justify-content-center align-items-center">
+                        <span class="save">Save</span> 
+                        <h4 class="fw-bold">30%</h4>
+                    </span>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="img6">
+                    <img src="../Public/Images/Shopper/womens-dress.avif" width="860px" height="100%">               
+                    <span class="dresses">Basic Women's Dresses</span>
+                    <span class="shopnow">Shop now
+                        <span class="bi bi-arrow-right"></span>
+                    </span>
+                </div>
+                <div class="img7">
+                    <img src="../Public/Images/Shopper/sweatshirt.webp" width="440px" height="100%">
+
+                    <span class="sweatshirts">Sweatshirts</span>
+                    <span class="shopnow">Shop now
+                        <span class="bi bi-arrow-right"></span>
+                    </span>
+                </div>
+
+            </div>
+    
+        </div>
+        <br><br><br><br>
+        <div class="text-center">
+            <h2 class="fw-bold">Top month Sellers</h2>
+            <br>
+            <div class="mb-4">
+                <span class="text-danger text-decoration-underline me-4">Women</span>
+                <span class="me-4">Men</span>
+                <span>Kids</span>
+            </div>
+        </div>
+        <br>
+        <div class="row5">
+            <div>
+                <div class="img8-shoes">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+            
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Shoes</span>
+                    <span class="fw-bold">Leather mid-heel Sandals</span>
+                    <span class="gray2 fw-bold">$129.00</span>
+                </span>
+            </div>
+            <div>
+                <div class="img9-dresses">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Dresses</span>
+                    <span class="fw-bold">Cotton floral print Dress</span>
+                    <span class="gray2 fw-bold">$85.00</span>
+                    
+                </span>
+            </div>
+            <div>
+                <div class="img10-shoes">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Shoes</span>
+                    <span class="fw-bold">Leather Sneakers</span>
+                    <span class="gray2 fw-bold"><s>$85.00</s>&nbsp;<span class="text-danger fw-bold">$85.00</span></span>
+                </span>
+            </div>
+            <div>
+                <div class="img11-tops">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Tops</span>
+                    <span class="fw-bold">Cropped cotton Top</span>
+                    <span class="gray2 fw-bold">$29.00</span>
+                </span>
+            </div>
+            
+        </div>
+        <div class="row6">
+            <div>
+                <div class="img12-dresses">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Dresses</span>
+                    <span class="fw-bold">Floral print midi Dress</span>
+                    <span class="gray2">$50.00</span>
+                </span>
+            </div>
+            <div>
+                <div class="img13-bags">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Bags</span>
+                    <span class="fw-bold">Suede cross body Bag</span>
+                    <span class="gray2 fw-bold"><s>$79.00</s><span class="text-danger">$129.00</span></span>
+                </span>
+            </div>
+            <div>
+                <div class="img14-skirts">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Skirts</span>
+                    <span class="fw-bold">Printed A-line Skirt</span>
+                    <span class="gray2 fw-bold">$79.00</span>
+                </span>
+            </div>
+            <div>
+                <div class="img15-shoes">
+                    <div class="hiding-buttons">
+                        <span class="bi bi-eye">
+
+                        </span>
+                        <span class="bi bi-cart3">
+
+                        </span>
+                        <span class="bi bi-heart">
+
+                        </span>
+                    </div>
+
+                </div>
+                <span class="d-flex flex-column text-below">
+                    <span class="gray1">Shoes</span>
+                    <span class="fw-bold">Heel strappy Sandals</span>
+                    <span class="gray2">$90.00</span>
+                </span>
+            </div>
+        </div>
+        <br><br>
+        <div class="text-center">
+            <span class="discover">
+                Discover more
+            </span>
+        </div>
+        <br><br>
+        <img src="../Public/Images/Shopper/big-banner.JPG" width="100%">
+        <br><br><br><br>
+        <div class="text-center">
+            <span class="mb-4">WHAT BUYERS SAY</span>
+            <h2 class="fw-bold">Latest buyers Reviews</h2>
+        </div>
+        <div class="carousel slide carousel1" id="reviews" data-bs-ride="carousel" data-bs-theme="dark">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../public/images/woman-shoes.jpg" height="600" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/images/men-fasion.jpg" height="600" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/images/women-fasion.jpg" height="600" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/images/kids-fasion.jpg" height="600" width="100%">
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#reviews"></button>
+                <button data-bs-slide-to="1" data-bs-target="#reviews"></button>
+                <button data-bs-slide-to="2" data-bs-target="#reviews"></button>
+                <button data-bs-slide-to="3" data-bs-target="#reviews"></button>
+
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="text-center">
+            <h2 class="fw-bold">@shopper</h2>
+            <span>Appear, dry there darkness they're seas, dry waters.</span>
+        </div>
+        <br>
+        <br>
+        <div class="row7">
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg1.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg2.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg3.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg4.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg5.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+            <div class="smallimgs">
+                <img src="../Public/Images/Shopper/smallimg6.JPG" height="200" width="200">
+                <span class="likes-comments">
+                    <span class="bi bi-heart">248</span>
+                    <span class="bi bi-chat-left">75</span>
+                </span>
+
+            </div>
+        </div>
+
+        <div class="row8">
+            <div>
+                <img src="../Public/Images/Shopper/brand1.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand2.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand3.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand4.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand5.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand6.JPG" height="50" width="150">
+            </div>
+            <div>
+                <img src="../Public/Images/Shopper/brand7.JPG" height="50" width="150">
+            </div>
+
+        </div>
+
+
+    
+    </section>
+
+    <footer>
+        <div class="row-1">
+            <span>Want Style Ideas and Treats?</span>
+        </div>
+        <div class="row-2">
+            <span class="email">Enter Email*</span>
+            <span class="subscribe">Subscribe</span>
+        </div>
+        <div class="row-3">
+            <div class="col1">
+                <div class="shopper">
+                    <span class="footer-title">Shopper.</span>
+                    <aside>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-youtube"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-linkedin"></span>
+                    </aside>
+                </div>
+            </div>
+            <div class="col2">
+                <div>
+                    <span class="service-title">SUPPORT</span>
+                    <span>Contact Us</span>
+                    <span>FAQs</span>
+                    <span>Size Guide</span>
+                    <span>Shipping & Returns</span>
+                </div>
+                <div>
+                    <span class="service-title">SHOP</span>
+                    <span>Men's Shopping</span>
+                    <span>Women's Shopping</span>           
+                    <span>Kids' Shopping</span>           
+                    <span>Discounts</span>           
+                </div>
+                <div>
+                    <span class="service-title">COMPANY</span>
+                    <span>Our Story</span>
+                    <span>Careers</span>           
+                    <span>Terms & Conditions</span>           
+                    <span>Privacy & Cookie policy</span>           
+                </div>
+                <div>
+                    <span class="service-title">CONTACT</span>
+                    <address>
+                        <span>1-202-555-0105</span>           
+                        <span>1-202-555-0106</span> 
+                        <span>help@shopper.com</span>           
+                    </address>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="last-line">
+            <span class="bi bi-c-circle">
+                2019 All rights reserved. Designed by Unvab.
+            </span>
+            <span>
+                <img src="../Public/Images/Shopper/cards.JPG">
+            </span>
+        </div>
+    </footer>
+    
+</body>
+</html>

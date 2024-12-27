@@ -1,0 +1,13 @@
+[
+    {
+    "Name": "iPhone 14 (Black) 128 GB",
+    "Price": 78000,
+    "Image": "../public/images/iphone-black.png"
+    },
+    {
+    "Name": "iPhone 14 (Green) 256 GB",
+    "Price": 95000,
+    "Image": "../public/images/apple-iphone.jpg"
+    }
+    ]
+    

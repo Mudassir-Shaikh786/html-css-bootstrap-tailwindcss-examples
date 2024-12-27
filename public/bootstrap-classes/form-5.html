@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+       input:required+span {
+        display: inline;
+        color:red;
+       }
+       input:optional+span {
+         display: none;
+       }
+       input:required {
+          border:1px solid red;
+       }
+       .age:in-range+div {
+        display: none;
+       }
+       .age:out-of-range+div {
+         display: block;
+         color:red;
+         font-size: 12px;
+       }
+       .mobile:valid~div {
+          display: none;
+       }
+       .mobile:invalid~div {
+          display: block;
+          color:red;    
+          font-size: 12px;
+       }
+       .mobile:valid {
+         border:1px solid green;
+       }
+       .mobile:invalid {
+          border:1px solid red;
+       }
+       .mobile {
+          outline: none;
+       }
+       .UserName:valid~div {
+          display: none;
+       }
+       .UserName:invalid~div {
+          display: block;
+          color:red;
+          font-size: 12px;
+       }
+       input:valid+span {
+          display: none;
+       }
+       input:valid {
+         border:1px solid green;
+       }
+       input {
+         outline: none;
+       }
+       .password:valid~div {
+          display: none;
+       }
+       .password:invalid~div {
+          display: block;
+          color:red;
+          font-size: 10px;
+       }
+    </style>
+</head>
+<body>
+   <form>
+       <dl>
+         <dt>User Name</dt>
+         <dd><input type="text" class="UserName" required><span>*</span>
+             <div>Name Required</div>
+          </dd>
+         <dt>Password</dt>
+         <dd><input type="password" class="password" pattern="(?=.*[A-Z])\w{4,15}" ><span>*</span>
+             <div>Password 4 to 15 with at least one uppercase letter</div>
+          </dd>
+         <dt>Age</dt>
+         <dd>
+            <input type="number" class="age" min="15" max="30">
+            <div>Age 15 to 30 only</div>
+          </dd>
+         <dt>Mobile</dt>
+         <dd>
+            <input type="text" name="Mobile" class="mobile" pattern="\+91\d{10}"><span>*</span>
+            <div>Invalid Mobile : +91 and 10 digits</div>
+          </dd>
+       </dl>
+       <button>Register</button>
+   </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <header class="d-flex justify-content-between p-2 mt-2 bg-dark text-white border border-2 border-dark">
+         <div>Shopper.</div>
+         <nav>
+            <span class="px-2">Home</span>
+            <span class="px-2">Shop</span>
+            <span class="px-2">Blog</span>
+            <span class="px-2">Pages</span>
+            <span class="px-2">Docs</span>
+         </nav>
+         <div>
+            <span class="bi bi-search px-2"></span>
+            <span class="bi bi-heart px-2"></span>
+            <span class="bi bi-cart3 px-2"></span>
+         </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<script>
+    var values = [ 30000, 67000, 52000, 68000,24000];
+
+   var result =  values.find(function(value){
+        return value>= 50000;
+    });
+
+    document.write(result);
+
+    var result =  values.filter(function(value){
+        return value>= 50000;
+    });
+
+    document.write(result);
+
+
+    values.filter(function(value){
+        return value>= 50000;
+    }).map(function(value){
+         document.write(value + "<br>");
+    })
+
+
+    for(var property in values){
+        document.write(`[${property}]${values[property]}<br>`);
+    }
+</script>

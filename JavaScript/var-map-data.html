@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = [
+            {Topic:"HTML", Description:"It is a markup language"},
+            {Topic:"JavaScript", Description: "It manipulates DOM"}  
+        ]
+        function bodyload(){
+            data.map(function(item){
+                var dt = document.createElement("dt");
+                dt.innerHTML = item.Topic;
+                var dd = document.createElement("dd");
+                dd.innerHTML = item.Description;
+                document.querySelector("dl").appendChild(dt);
+                document.querySelector("dl").appendChild(dd);
+            })
+        }
+    </script>
+    <style>
+        dt {
+            background-color: gray;
+            color:white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body onload="bodyload()">
+     <dl>
+
+     </dl>
+</body>
+</html>

@@ -1,0 +1,440 @@
+.women-fashion {
+    background-image: url(../public/images/women-fasion.jpg);
+    background-size: cover;
+}
+.men-fashion {
+    background-image: url(../public/images/men-fasion.jpg);
+    background-size: cover;
+}
+.kids-fashion {
+    background-image: url(../public/images/kids-fasion.jpg);
+    background-size: cover;
+}
+.content {
+    margin-top: 20px;
+    justify-content: space-around;
+
+}
+main {
+    height: 550px;
+    margin-top: 10px;
+}
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.bags {
+    background-image: url(../public/images/b1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top-seller-row-1 {
+    height: 400px;
+    margin: 20px;
+    grid-gap: 30px;
+    height: 400px;
+}
+.men-dress {
+    background-image: url(../public/images/b2.jpg);
+    background-size: cover;
+}
+.women-dress {
+    background-image: url(../public/images/b3.jpg);
+    background-size: cover;
+}
+.shirts {
+    background-image: url(../public/images/b4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.font {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding-left: 20px;
+}
+.design {
+    color: #0e4470ee;
+    background-color: rgb(181, 166, 172);
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.bags:hover {
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+.men-dress:hover {
+    transform: translatex(10px);
+    transition-duration: 1s;
+}
+.women-dress:hover {
+    transform: translatex(10px);
+    transition: 1s;
+}
+.shirts:hover {
+    transform: translatex(10px);
+    transition: 1s;
+}
+.rotate:hover {
+    transform: translateX(10px);
+}
+.sandal {
+    background-image: url(../public/images/b-5.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.bags:hover .icons {
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+.men-dress:hover .icons {
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+.women-dress:hover .icons {
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+.shirts:hover .icons {
+    transform: translateX(20px);
+    transition: 0.5s;
+}
+.sandal:hover {
+    background-image: url(../public/images/b5.1.jpg);
+    background-size: cover;
+}
+.printed-dress {
+    background-image: url(../public/images/b6.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.printed-dress:hover {
+    background-image: url(../public/images/b6.1.jpg);
+    background-size: cover;
+}
+.shoe {
+    background-image: url(../public/images/b7.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.shoe:hover {
+    background-image: url(../public/images/b7.1.jpg);
+    background-size: cover;
+}
+.shoe:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.sandal:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.printed-dress:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.women-cloths:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.women-cloths {
+    background-image: url(../public/images/b8.1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.women-cloths:hover {
+    background-image: url(../public/images/b8.png);
+    background-size: cover;
+}
+
+.fav-icons {
+    transform: translateY(40px);
+}
+.fav-icons span {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.fav-icons span:hover {
+    background-color: red;
+    color:white;
+}
+.dresses {
+    background-image: url(../public/images/printed-dress.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.dresses:hover {
+    background-image: url(../public/images/printed-dress-2.jpg);
+    background-size: cover;
+}
+.body-bag {
+    background-image: url(../public/images/b10.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.body-bag:hover {
+    background-image: url(../public/images/10.1.jpg);
+    background-size:cover;
+}
+.skirts {
+    background-image: url(../public/images/skirts.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.skirts:hover {
+    background-image: url(../public/images/b11.png);
+    background-size: cover;
+}
+.heel-sandals {
+    background-image: url(../public/images/b12.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+.heel-sandals:hover {
+    background-image: url(../public/images/woman-shoes.jpg);
+    background-size: cover;
+}
+.body-bag:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.skirts:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.heel-sandals:hover .fav-icons {
+    transform: translateY(-40px);
+}
+.dresses:hover .fav-icons {
+    transform: translateY(-40px);
+}
+@media screen and (orientation:landscape) {
+    main {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+    }
+    .main-2 {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-gap: 20px;
+        margin: 10px 50px 10px 50px;
+    }
+.services {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: 10px;
+}
+.top-seller-row-1 {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    margin: 20px;
+    grid-gap: 30px;
+    height: 400px;
+}
+footer {
+    background-color: black;
+    color:white;
+    padding: 20px;
+    font-family: Arial;
+}
+.row-1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 22px;
+    font-family: Arial;
+}
+.row-2 {
+    text-align: center;
+    padding-top: 30px;
+}
+.email {
+    background-color: #ccc9c9ee;
+    padding: 15px;
+    font-size: 17px;
+    width: 450px;
+    display: inline-block;
+    font-family: Arial;
+    text-align: left;
+}
+.subscribe {
+    background-color: #bcb0b0ee;
+    padding: 15px;
+    font-size: 17px;
+    width: 120px;
+    font-family: Arial;
+}
+.row-3 {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 20px;
+}
+.service-title~span {
+    padding-bottom: 15px;
+    display: block;
+}
+address span {
+    display: block;
+    padding-bottom: 15px;
+}
+.footer-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+}
+aside span {
+    padding: 2px;
+    font-size: 20px;
+}
+}
+@media screen and (orientation:portrait) {
+    main {
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .men-fashion {
+        display: none;
+    }
+    .women-fashion {
+        display: none;
+    }
+    .services {
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .services div {
+        margin: 10px 0px 10px 0px;
+    }
+    .top-seller-row-1 {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-gap: 10px;
+    }
+    footer {
+        background-color: black;
+        color:white;
+        padding: 20px;
+        font-family: Arial;
+    }
+    .row-1 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 22px;
+        font-family: Arial;
+    }
+    .row-2 {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .email {
+        background-color: #ccc9c9ee;
+        padding: 18px;
+        font-size: 19px;
+        width: 170px;
+        display: inline-block;
+        font-family: Arial;
+        padding-left: 10px;
+    }
+    .subscribe {
+        background-color: #bcb0b0ee;
+        padding: 18px;
+        font-size: 19px;
+        width: 120px;
+        display: inline-block;
+        font-family: Arial;
+        margin-left: 15px;
+    }
+    .row-3 {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .service-title {
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .service-title~span {
+        padding-bottom: 10px;
+        display: block;
+    }
+    address span {
+        padding-bottom: 15px;
+        display: block;
+    }
+    .footer-title {
+        font-size: 35px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        display:flex;
+    }
+    aside span {
+        padding: 2px;
+        font-size: 20px;
+    }
+    .top-seller-row-1 {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-top: 20px;
+        grid-gap: 30px;
+}
+.font {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.font-3 {
+    display: none;
+}
+.font-4 {
+    display: none;
+}
+.bags {
+    background-size: cover;
+}
+.shirts {
+    background-size: cover;
+}
+}

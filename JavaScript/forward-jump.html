@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function VerifyCard(){
+                var card =  document.getElementById("txtCard").value;
+                if(card==="4444555566667890") {
+                    document.getElementById("txtCvv").disabled = false;
+                }
+         }
+         function VerifyCvv(){
+            var cvv = document.getElementById("txtCvv").value;
+            if(cvv==="3456") {
+                document.getElementById("lstExpiry").disabled = false;
+            }
+         }
+         function VerifyExpiry(){
+            var expiry = document.getElementById("lstExpiry").value;
+            if(expiry==="2025") {
+                document.getElementById("btnSubmit").disabled = false;
+            }
+         }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Payment Details</legend>
+        <dl>
+            <dt>Card Number</dt>
+            <dd><input type="text" id="txtCard" onblur="VerifyCard()" maxlength="16"></dd>
+            <dt>CVV</dt>
+            <dd><input type="text" onblur="VerifyCvv()" disabled id="txtCvv" size="4" maxlength="4"></dd>
+            <dt>Expiry</dt>
+            <dd>
+                <select id="lstExpiry" onchange="VerifyExpiry()" disabled>
+                    <option>Select Expiry Year</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                </select>
+            </dd>
+        </dl>
+        <button id="btnSubmit" disabled>Submit</button>
+    </fieldset>
+</body>
+</html>

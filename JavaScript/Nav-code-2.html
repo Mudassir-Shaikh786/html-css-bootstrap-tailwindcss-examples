@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var categories = ["All", "Footwear", "Fashion"];
+
+        function LoadClick(){
+            document.querySelector("ul").innerHTML = "";
+            categories.splice(1,0, "Electronics");
+            categories.map(function(category){
+                var li = document.createElement("li");
+                li.innerHTML = `<input type = "checkbox"> <label> ${category} </label>`;
+                document.querySelector("ul").appendChild(li);
+            })
+        }
+     </script>
+     <head>
+        <body>
+            <button onclick = "LoadClick()">Load list</button>
+            <ul>
+
+            </ul>
+        </body>
+     </head>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <script>
+        function bodyload(){
+            username = prompt("Enter Name");
+            if(username=='') {
+                alert("Name can't be empty");
+            }
+            else if(username==null) {
+                alert("You canceled..");
+            }
+            else {
+                document.getElementById("lblUser").innerHTML = username;
+            }
+           
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <h2>Home</h2>
+    <p>Hello ! <span id="lblUser"></span></p>
+</body>
+</html>

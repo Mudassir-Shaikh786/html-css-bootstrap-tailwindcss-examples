@@ -1,0 +1,45 @@
+<script>
+    function f1()
+    {
+        var x;          // declaring
+        x = 10;         // assignment
+        if(x==10)
+        {
+            var y = 20; // initialization
+            y = 30;
+            var y;     // shadowing
+            y=50;
+        }
+        document.write("x=" + x + "<br>y=" + y);
+    }
+    f1();
+</script>
+
+<script>
+    "use strict";
+    function f1()
+    {
+        x = 20;
+        document.write("x=" + x);
+        var x;          // hoisting
+    }
+    f1();
+</script>
+   
+
+<script>
+    "use strict";
+    function f1()
+    {
+        let x;
+        x = 10;
+        if(x==10)
+        {
+            let y = 20;
+            y = 30;
+            document.write("x=" + x + "<br>y=" + y);
+        }
+       
+    }
+    f1();
+</script>

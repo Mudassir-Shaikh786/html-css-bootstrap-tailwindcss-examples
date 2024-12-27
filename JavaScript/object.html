@@ -1,0 +1,11 @@
+<script>
+    var tv = {
+        "Name": "Samsung TV",
+        "Price": 45000.55,
+        "Stock": true,
+        "Cities": ["Delhi", "Hyd"],
+        "Rating": {Rate:4.3, Count:500}
+    }
+    tv.Price = prompt("Enter new price");
+    document.write(`Name=${tv.Name}<br>Price=${tv.Price}<br>Stock=${tv.Stock}<br>Cities=${tv.Cities.toString()}<br>Rating=${tv.Rating.Rate}[${tv.Rating.Count}]`);
+</script>

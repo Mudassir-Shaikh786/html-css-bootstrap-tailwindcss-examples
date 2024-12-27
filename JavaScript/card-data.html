@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var products = [
+    
+           { Name: "TV", Price: 56000.44,Category:"Electronics", Image:"../public/images/apple-iphone.jpg"},
+           { Name: "Mobile", Price: 12000.43, Category: "Electronics", Image:"../public/images/iphone-black.png" },
+           { Name: "Nike Casuals", Price:4000.52, Category: "Footwear", Image:"../public/images/men-fasion.jpg" },
+           { Name: "Lee Jeans", Price:200.44, Category:"Fashion", Image:"../public/images/women-fasion.jpg"},
+           { Name: "tea-shirt", Price:200.44, Category:"Fashion", Image:"../public/images/kids-fasion.jpg"}
+        ];
+     function bodyload(){
+      products.map(function(product){
+        var div = document.createElement("div");
+        div.className="card p-2 m-2";
+        div.style.width="200px";
+        div.innerHTML=`
+        <img src=${product.Image} class="card-img-top" height="200px";
+        <div class="card-header">
+          <div class="fw-bold"> ${product.Name}
+          </div>
+          <div class="card-body">
+            <dl>
+              <dt>Category</dt>
+              <dd>${product.Category}</dd>
+              <dt>Price</dt>
+              <dd>${product.Price}</dd>
+            </dl>
+            </div>
+            <div class="card-footer">
+              <button class="bi bi-cart4 btn btn-warning w-100" onclick="btnClick()">add to Cart</button>
+              </div>
+
+
+        `;
+        document.querySelector("section").appendChild(div);
+
+      })
+
+     }
+      function btnClick(){
+       document.write(" You can't do it ");
+      }
+    </script>
+    <style>
+      body{
+        background-image: url(../public/images/netflix-background.jpg);
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body onload="bodyload()">
+  
+   <section class="d-flex mt-5 justify-content-center">
+   </section>
+   <h3 class="text-center fw-bold" style="color: blue;">card using javascript functions</h3>
+</body>
+</html>

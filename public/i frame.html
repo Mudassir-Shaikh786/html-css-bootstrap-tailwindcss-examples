@@ -1,0 +1,54 @@
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: black;
+            color:white;
+            text-align: center;
+            padding: 5px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            margin-top: 10px;
+        }
+        ul {
+            list-style: none;
+            margin-left: -30px;
+        }
+        li {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Website Templates</h2>
+    </header>
+    <section>
+        <nav>
+          <ul>
+            <li><a target="frameBody" href="./shopper-template.html">Shopper</a></li>
+            <li><a target="frameBody" href="./amazon-card.html">Amazon</a></li>
+            <li><a target="frameBody"  href="./docs/kerala-tourism.pdf">Tourism</a></li>
+            <li><a target="frameBody" href="https://www.youtube.com/embed/Nyd2pPzrz74">Java Programs</a></li>
+            <li><a target="frameBody" href="https://www.youtube.com/embed/lqKQaJ4wMq0"&gt; Full Stack Courses </a></li>
+          </ul>
+        </nav>
+        <main>
+            <iframe name="frameBody" src="./shopper-template.html"></iframe>
+        </main>
+    </section>
+</body>
+</html>

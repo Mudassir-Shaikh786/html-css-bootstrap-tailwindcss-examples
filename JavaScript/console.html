@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <script>
+        function AddClick(){
+             folderName = document.getElementById("txtName").value;
+
+             if(folderName=='')
+             {
+                document.getElementById("error").innerHTML = "Name Required";
+             }else {
+                document.querySelector("p").innerHTML += "Folder Created : " + folderName + "<br>";
+                document.getElementById("txtName").value = "";
+                document.getElementById("error").innerHTML = "";
+             }
+           
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtName" placeholder="New folder name">
+    <button onclick="AddClick()">Add New Folder</button>
+    <div id="error" style="color:red"></div>
+    <p></p>
+</body>
+</html>

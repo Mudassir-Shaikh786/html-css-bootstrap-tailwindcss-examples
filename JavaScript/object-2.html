@@ -1,0 +1,18 @@
+<script>
+    var tv = {
+        "Name": "",
+        "Price": 0,
+        "Qty": 1,
+        "Total": function(){
+            return this.Qty * this.Price;
+        },
+        "Print": function(){
+            document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Qty=${this.Qty}<br>Total=${this.Total()}`);
+        }
+    }
+    tv.Name = prompt("Enter Product Name");
+    tv.Price = parseFloat(prompt("Enter Price"));
+    tv.Qty = parseInt(prompt("Enter Quantity"));
+    tv.Print();
+   
+</script>

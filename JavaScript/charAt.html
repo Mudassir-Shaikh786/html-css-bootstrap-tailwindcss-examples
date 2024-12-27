@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyTitle(){
+            var title = document.getElementById("txtTitle").value;
+            var msg = document.getElementById("msg");
+            if(title.charAt(0)=="W") {
+                msg.innerHTML="";
+            } else {
+                msg.innerHTML="Title must start with W character";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Title</dt>
+        <dd><input type="text" id="txtTitle" onblur="VerifyTitle()"></dd>
+        <dd id="msg"></dd>
+    </dl>
+</body>
+</html>

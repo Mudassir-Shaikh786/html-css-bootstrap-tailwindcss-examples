@@ -1,0 +1,12 @@
+
+<script>
+     var mobile = prompt("Enter Mobile Number");
+     var regExp = /\+91\d{10}/;
+
+     if(mobile.match(regExp))
+     {
+         document.write("Mobile Verified");
+     } else {
+         document.write("Invalid Mobile: Must start with +91 & 10 digits");
+     }
+</script>

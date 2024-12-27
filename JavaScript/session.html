@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+            poster.src="../public/images/men-fasion.jpg";
+            frmRegister.btnRegister.value = "Register";
+            frmLogin.btnLogin.value = "Login";
+           
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+   
+    <div>
+        <img width="100" height="100" name="poster">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            Your Email : <input type="email" name="txtEmail"> <input name="btnRegister" type="button">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Your OTP : <input type="text" name="txtOtp"> <input name="btnLogin" type="button">
+        </form>
+    </div>
+</body>
+</html>
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+            document.getElementById("poster").src = "../public/images/kids-fasion.jpg";
+            document.getElementById("btnRegister").value = "Register";
+            document.getElementById("btnLogin").value = "Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+   
+    <div>
+        <img width="100" height="100" id="poster" name="poster">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            Your Email : <input type="email" name="txtEmail"> <input id="btnRegister" type="button">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Your OTP : <input type="text" name="txtOtp"> <input id="btnLogin" type="button">
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+           document.querySelector("img").src = "../public/images/women-fasion.jpg";
+           document.querySelector("#btnRegister").value = "Register";
+           document.querySelector(".btn-primary").value = "Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+   
+    <div>
+        <img width="100" height="100" id="poster" name="poster">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            Your Email : <input type="email" name="txtEmail"> <input id="btnRegister" type="button">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Your OTP : <input type="text" name="txtOtp"> <input class="btn-primary" type="button">
+        </form>
+    </div>
+</body>
+</html>
+

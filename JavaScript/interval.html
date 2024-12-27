@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interval</title>
+    <script>
+        function Response(){
+            document.querySelector("p").innerHTML += `reply from 127.0.0.1<br>`;
+        }
+        var thread;
+        function PingClick(){
+            thread = setInterval(Response, 1000);
+        }
+        function StopClick(){
+            clearInterval(thread);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="PingClick()">Ping</button>
+    <button onclick="StopClick()">Stop</button>
+    <p></p>
+</body>
+</html>

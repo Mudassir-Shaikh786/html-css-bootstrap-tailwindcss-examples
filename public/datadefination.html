@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt {
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 5px;
+            font-family: Arial;
+            margin-bottom: 10px;
+        }
+        dd span {
+            display: inline-block;
+            width: 150px;
+            border:1px solid black;
+            height: 20px;
+            padding: 5px;
+        }
+        dd {
+            margin-bottom: 10px;
+        }
+        dl {
+            display: grid;
+            grid-template-columns:2fr 10fr;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><span class="UserName">John</span></dd>
+        <dt>Password</dt>
+        <dd><span class="Password">*****</span></dd>
+        <dt>Age</dt>
+        <dd><span class="Age">22</span></dd>
+        <dt>Address</dt>
+        <dd><span class="Address">Delhi</span></dd>
+    </dl>
+</body>
+</html>

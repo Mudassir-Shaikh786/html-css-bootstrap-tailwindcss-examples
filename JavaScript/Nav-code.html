@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var categories = ["All", "Electronics", "Footwear", "Fashion"];
+        function LoadClick(){
+
+            categories.map(function(value){
+
+                var li = document.createElement("li");
+                li.innerHTML = value;
+
+                document.querySelector("ol").appendChild(li);
+
+                var option = document.createElement("option");
+                option.text = value;
+                option.value = value;
+
+                document.querySelector("select").appendChild(option);
+
+                var button = document.createElement ("button");
+                button.innerHTML = value;
+                document.querySelector("nav").appendChild(button);
+
+                var input = document.createElement("input");
+                input.type = "checkbox";
+
+                 var label = document.createElement("label");
+                 label.innerHTML = value;
+
+                 var ulLi = document.createElement("li");
+                 ulLi.appendChild(input);
+                 ulLi.appendChild(label);
+
+                 document.querySelector("ul").appendChild(ulLi);
+                
+                })
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="LoadClick()">Load List</button>
+    <nav style="display: flex; justify-content: space-around;">
+
+    </nav>
+    <ol>
+
+    </ol>
+    <select>
+
+    </select>
+    <ul>
+        
+    </ul>
+</body>
+</html>

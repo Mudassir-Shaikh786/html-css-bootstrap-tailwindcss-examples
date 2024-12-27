@@ -1,0 +1,14 @@
+<script>
+    var str = "Welcome to JavaScript."
+    // loop to find how many times e occured?
+    var count = 0;
+    function CountChars(char){
+        for(var i=0;i<str.length;i++){
+            if(str.charAt(i)===char){
+                 count++;
+            }
+        }
+        document.write(`The char ${char} occurred ${count} times`);
+    }
+    CountChars(prompt("Enter Character"));    // Print "e" occurred 2 times.
+</script>

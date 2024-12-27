@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li> <a href="./shopper-template.html">Shopper Template</a> </li>
+        <li> <a href="./images/women-fashion.jpg"> Women Fashion </a> </li>
+        <li> <a href="./images/men-fashion.jpg" download="DSC001MEN"> Men Fashion </a> </li>
+        <li> <a href="./docs/kerala-tourism.pdf"> Kerala Tourism </a></li>
+        <li> <a href="./docs/Angular-14.doc">Angular Tutorial</a> </li>
+    </ol>
+</body>
+</html>
+
+Navigate to URL:
+- You can create a hyperlink that navigates user to remote location using URL.
+- You can link to any content outside your project.
+
+Syntax:
+    <a href="https://www.server.com/resource"&gt;  Click </a>
+
+    <a href="https://www.amazon.in/mobiles"&gt; Amazon Mobiles </a>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li> <a href="https://www.amazon.in"&gt; Amazon Shopping </a> </li>
+        <li> <a href="https://www.amazon.in/watches"&gt; Watches on Amazon </a> </li>
+    </ol>
+</body>
+</html>
+
+
+Navigate to Application:
+- Browser supports navigation to applications, which you can invoke from browser.
+- It includes
+    a) phone                => tel:
+    b) WhatsApp             => https://wa.me/number
+    c) skype                => skype:
+    d) email                 => mailto:
+
+Syntax:
+    <a href="name@gmail.com">
+    <a href="tel:yournumber">
+    <a href="skype:account.com?call | chat">
+    <a href="https://wa.me/number"&gt;
+
+Invoke JavaScript function:
+- A hyperlink can run custom functions.
+- You can write JavaScript function to execute on link click.
+
+Syntax:
+    <a href="javascript:function(){}">
+
+    <a href="javascript:window.print()">  Print </a>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <address>
+        <div>Naresh-Technologies</div>
+        <div class="bi bi-envelope"> <a href="info@nareshit.com"> info@nareshit.com </a> </div>
+        <div class="bi bi-phone-flip"> <a href="tel:+919876543210"> +919876543210 </a> </div>
+        <div class="bi bi-skype"> <a href="skype:nareshit@outlook.com?call"> Call on Skype </a> </div>
+        <div class="bi bi-messenger"> WhatsApp <a href="https://wa.me/+919876543210"&gt; +919876543210 </a> </div>
+        <div class="bi bi-printer-fill"> <a href="javascript:window.print()">Print Page</a> </div>
+    </address>
+</body>
+</html>
+
+FAQ's:
+1. How to open linked document in a new tab?
+A. By using "target" attribute set to "_blank".
+
+Syntax:
+    <a href="./images/fashion.jpg"  target="_blank">  
+
+2. How to open linked document in new window?
+A. By using the JavaScript function "window.open()"
+
+Syntax:
+    window.open("path", "title", "width=300 height=400")
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <a href="./images/women-fashion.jpg"> Women Fashion </a> <br><br>
+    <a href="./images/men-fashion.jpg" target="_blank"> men Fashion </a> <br><br>
+    <a href="./shopper-template.html" target="_blank">Shopper Template</a> <br><br>
+    <a href="javascript:window.open('./images/kids-fashion.jpg','Kids','width=300 height=400')"> Kids Fashion </a> <br><br>
+   
+</body>
+</html>
+
+
+3. How to open linked document in same tab along with existing content?
+A. By using "<iframe>" element of HTML 5
+
+Syntax:
+    <iframe  name="refName"> </iframe>
+
+    <a href="path" target="refName">  Click </a>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+   <section>
+     <nav>
+        <ul>
+            <li><a href="./docs/kerala-tourism.pdf" target="bodyFrame">Kerala Toursim</a></li>
+            <li><a href="./images/iphone.jpg" target="bodyFrame">iPhone</a></li>
+        </ul>
+     </nav>
+     <main>
+        <iframe name="bodyFrame"></iframe>
+     </main>
+   </section>
+</body>
+</html>

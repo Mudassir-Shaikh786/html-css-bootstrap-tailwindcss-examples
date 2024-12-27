@@ -1,0 +1,12 @@
+<script>
+    function   Validate(){
+        return function (pwd) {
+           if (pwd === "admin"){
+            return "Success..";
+           } else {
+            return "Invalid";
+           }
+        }
+    }
+   document.write(Validate() ("admin"));
+</script>
