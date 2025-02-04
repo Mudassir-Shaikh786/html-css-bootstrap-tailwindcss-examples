@@ -1,0 +1,25 @@
+.alert {
+  border: 1px solid rgb(7, 184, 15);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(7, 184, 15);
+  background-color: rgb(255, 250, 227);
+}
+.alert h3 {
+  font-family: Arial;
+  color: rgb(7, 184, 15);
+}
+.alert p {
+  font-family: Segoe UI;
+  font-size: 18px;
+  color: rgb(7, 184, 15);
+}
+.alert a {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(7, 184, 15);
+}
+
+/*# sourceMappingURL=index.css.map */

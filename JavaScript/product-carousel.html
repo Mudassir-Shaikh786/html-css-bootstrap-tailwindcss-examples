@@ -8,55 +8,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script>
-        function LoadProduct(id){
+        var productId = 1; 
+        var thread;
+
+        function LoadProduct(id) {
             fetch(`https://fakestoreapi.com/products/${id}`)
-            .then(function(response){
+            .then(function(response) {
                 return response.json();
             })
-            .then(function(product){
+            .then(function(product) {
                 document.getElementById("lblTitle").innerHTML = product.title;
                 document.getElementById("imgProduct").src = product.image;
-                document.getElementById("lblPrice").innerHTML =`$ ${product.price}`;
+                document.getElementById("lblPrice").innerHTML = `$ ${product.price}`;
+                document.getElementById("seekBar").value = id;
+                UpdateButtons();
             })
-        }
-        var productId = 1;
-        function NextClick(){
-            productId++;
-            LoadProduct(productId);
-        }
-        function PreviousClick(){
-            productId--;
-            LoadProduct(productId);
         }
 
-        function LoadProductAuto(){
-            productId++;
+        function UpdateButtons() {
             document.getElementById("seekBar").value = productId;
-            fetch(`https://fakestoreapi.com/products/${productId}`)
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(product){
-                document.getElementById("lblTitle").innerHTML = product.title;
-                document.getElementById("imgProduct").src = product.image;
-                document.getElementById("lblPrice").innerHTML =`$ ${product.price}`;
-            })
+            document.getElementById("PreviousBtn").disabled = productId <= 1;
+            document.getElementById("NextBtn").disabled = productId >= 20;
         }
-        var thread;
-        function PlayClick(){
+
+        function NextClick() {
+            if (productId < 20) {
+                productId++;
+                LoadProduct(productId);
+            }
+        }
+
+        function PreviousClick() {
+            if (productId > 1) {
+                productId--;
+                LoadProduct(productId);
+            }
+        }
+
+        function LoadProductAuto() {
+        if (productId < 20) {
+        productId++;
+        LoadProduct(productId);
+      } else {
+        clearInterval(thread); 
+        document.getElementById("lblStatus").innerHTML = "Slideshow - Paused";
+      }
+        }
+        
+
+        function PlayClick() {
             thread = setInterval(LoadProductAuto, 5000);
             document.getElementById("lblStatus").innerHTML = "Slide Show - Running";
         }
-        function PauseClick(){
+
+        function PauseClick() {
             clearInterval(thread);
             document.getElementById("lblStatus").innerHTML = "Slide Show - Paused";
         }
-        function SeekBarChange(){
-            LoadProduct(document.getElementById("seekBar").value);
+
+        function SeekBarChange() {
+            productId = parseInt(document.getElementById("seekBar").value);
+            LoadProduct(productId);
         }
+
+        function bodyload() {
+            LoadProduct(productId);
+        };
     </script>
 </head>
-<body class="container-fluid d-flex justify-content-center" onload="LoadProduct(1)">
+<body onload="bodyload()" class="container-fluid d-flex justify-content-center">
     <div class="card w-50 mt-4">
         <div class="card-header text-center">
             <div id="lblTitle"></div>
@@ -65,17 +85,17 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-1 d-flex flex-column align-items-center justify-content-center">
-                    <button onclick="PreviousClick()" class="bi bi-chevron-left btn"></button>
+                    <button id="PreviousBtn" onclick="PreviousClick()" class="bi bi-chevron-left btn" disabled></button>
                 </div>
                 <div class="col-10 position-relative">
                     <div class="badge bg-danger position-absolute p-3 fs-5 top-0 end-0 rounded rounded-circle" id="lblPrice"></div>
-                    <img width="100%" id="imgProduct" height="350">
+                    <img width="100%" id="imgProduct" height="350" />
                     <div>
                         <input type="range" onchange="SeekBarChange()" id="seekBar" min="1" max="20" value="1" class="form-range">
                     </div>
                 </div>
                 <div class="col-1 d-flex flex-column align-items-center justify-content-center">
-                    <button class="bi bi-chevron-right btn" onclick="NextClick()"></button>
+                    <button id="NextBtn" class="bi bi-chevron-right btn" onclick="NextClick()" disabled></button>
                 </div>
             </div>
         </div>

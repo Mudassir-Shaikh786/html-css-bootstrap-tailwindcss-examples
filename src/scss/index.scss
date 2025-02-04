@@ -1,0 +1,43 @@
+$alert-success:rgb(7,184,15);
+$bgcolor : rgb(255, 250, 227);
+$theme : "success";
+
+@if $theme=="success"
+{
+    $alert-success:rgb(7,184,15);
+    $bgcolor : rgb(255, 250, 227);
+}
+@else if $theme=="danger"
+{
+    $alert-success:rgb(184,7,7);
+    $bgcolor : rgb(250, 225, 225);
+}
+@else
+{
+    $alert-success:rgb(232,224,0);
+    $bgcolor : rgb(250, 248, 225);
+}
+.alert
+{
+    border:1px solid $alert-success;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px $alert-success;
+    background-color: $bgcolor;
+    h3 {
+        font-family: Arial;
+        color: $alert-success;
+    }
+    p {
+        font-family: Segoe UI;
+        font-size: 18px;
+        color: $alert-success;
+    }
+    a {
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        color: $alert-success;
+    }
+}

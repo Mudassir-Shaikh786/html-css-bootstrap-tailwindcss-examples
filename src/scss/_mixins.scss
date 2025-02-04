@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin ApplyTheme()
+{
+    .alert {
+        border: 2px solid $border-color;
+        background-color: $bgcolor;
+        padding: 20px;
+        h2 {
+            font-family: Arial;
+            color: $border-color;
+        }
+        p{
+            font-family: Ink Free;
+            font-size: 22px;
+            color: $border-color;
+        }
+    }
+}
